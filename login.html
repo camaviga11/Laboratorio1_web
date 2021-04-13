@@ -29,23 +29,38 @@
     <div class="container_main">
         <h1>Formulario de registro</h1>
 		<form action="pagina2.html" method="GET" target="_blank" enctype="multipart/form-data">
+
 			<label>Nombre</label><br>
-			<input type="text" name="nombre_i" size="16" maxlength="32" placeholder="Ingrese nombre" title="Ingrese su nombre entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+			<input type="text" name="nombre_i" size="20" maxlength="32" placeholder="Ingrese nombre" title="Ingrese su nombre entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+
 			<label>Apellidos</label><br>
-			<input type="text" name="apellido_i" size="32" maxlength="32" placeholder="Ingrese apellidos" title="Entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+			<input type="text" name="apellido_i" size="20" maxlength="32" placeholder="Ingrese apellidos" title="Entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+
+            <label>Usuario</label><br>
+			<input type="text" name="usuario_i" size="20" maxlength="32" placeholder="Ingrese su usuario" title="Mayusculas,minusculas y numeros"  pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+
 			<label>Contraseña</label><br>
-			<input type="password" name="contrasena_i" size="16" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+			<input type="password" name="contrasena_i" size="20" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+
             <label>Confirmar contraseña</label><br>
-			<input type="password" name="contrasena_i" size="16" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+			<input type="password" name="contrasena2_i" size="20" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+
 			<label>Correo</label><br>
-			<input type="text" name="dni_i" size="16" maxlength="16" placeholder="Correo electronico" title="Correo personal" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
-			
+			<input type="text" name="dni_i" size="20" maxlength="16" placeholder="Correo electronico" title="Correo personal" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
+
+            <label>Celular</label><br>
+            <input type="number" name="celular_i" size="16" maxlength="16" placeholder="Ingrese su celular" title="Numero de celular, solo numeros" pattern="[0-9]{4,16}"><br><br>
+
+            <label >Fecga de nacimiento</label><br>
+            <input type="date" name="fecha_i" title="Fecha de nacimiento"><br><br>
+
 			<label> Sexo</label><br>
 			<input type="radio" name="genero_i" value="hombre">Hombre <br>
 			<input type="radio" name="genero_i" value="mujer" checked>Mujer <br>
 			<input type="radio" name="genero_i" value="otro">Otro <br><br>
+
 			
-			<label>Incluir foto de perfil </label>
+			<label>Foto de perfil </label>
 			<input type="file" name="foto_i"><br><br>
 			<input type="checkbox" name="sauscripcion_i" value="suscrito">Enviar notificaciones al correo de novedades y promociones exclusivas de GamerZone <br><br>
 			<input type="submit" name="guardar_i" value="Guardar cambios">
