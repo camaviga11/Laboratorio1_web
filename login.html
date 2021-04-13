@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" manifest="datos.appache">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registrarse</title>
+    <meta name="description" content="Pagina para la venta de articulos relacionados con el gaming" />
+    <meta name="author" content="camaviga11" />
+    <meta name="keywords" content="video juegos gaming gamer gamerzone warzone teclados" />
+    <meta name="application-name" content="GamerZone" />
+</head>
+
+<body>
+    <header>
+        <!--Logo-->
+        <h1>GZ</h1>
+        <!--menu de navegacion principal-->
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Mouse</li>
+                <li>Diademas</li>
+                <li>Teclados</li>
+                <li>Iniciar sesion</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container_main">
+        <h1>Formulario de registro</h1>
+		<form action="pagina2.html" method="GET" target="_blank" enctype="multipart/form-data">
+			<label>Nombre</label><br>
+			<input type="text" name="nombre_i" size="16" maxlength="32" placeholder="Ingrese nombre" title="Ingrese su nombre entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+			<label>Apellidos</label><br>
+			<input type="text" name="apellido_i" size="32" maxlength="32" placeholder="Ingrese apellidos" title="Entre 2-32 letras" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"><br><br>
+			<label>Contraseña</label><br>
+			<input type="password" name="contrasena_i" size="16" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+            <label>Confirmar contraseña</label><br>
+			<input type="password" name="contrasena_i" size="16" maxlength="16" placeholder="Ingrese su contraseña" title="Mayusculas,minusculas y numeros" pattern="[A-Za-z0-9!?-]{4,16}"><br><br>
+			<label>Correo</label><br>
+			<input type="text" name="dni_i" size="16" maxlength="16" placeholder="Correo electronico" title="Correo personal" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"><br><br>
+			
+			<label> Sexo</label><br>
+			<input type="radio" name="genero_i" value="hombre">Hombre <br>
+			<input type="radio" name="genero_i" value="mujer" checked>Mujer <br>
+			<input type="radio" name="genero_i" value="otro">Otro <br><br>
+			
+			<label>Incluir foto de perfil </label>
+			<input type="file" name="foto_i"><br><br>
+			<input type="checkbox" name="sauscripcion_i" value="suscrito">Enviar notificaciones al correo de novedades y promociones exclusivas de GamerZone <br><br>
+			<input type="submit" name="guardar_i" value="Guardar cambios">
+			<input type="reset" name="reset_i" value="Borrar datos">
+		</form>
+    </div>
+    <footer>
+        <div>
+            <h2>Acerca de nosotros</h1>
+                <p>GamerZone es una empresa dedicada a la venta de productos relacionados con el gaming. Puedes ingresar
+                    a nustras redes sociales para ver informacion adicional denustros productos y estar al tando de las
+                    novedades y descuentos especiales.</p>
+        </div>
+        <div>
+            <h2>Redes sociales</h1>
+                <h3>Facebook
+            </h2>
+            <h3>Instagram</h2>
+                <h3>Whatsapp</h2>
+        </div>
+        <div>
+            <h2>Comunicate con nosotros</h1>
+                <p>Ciudad: Medellin</p>
+                <p>Celular: +57 310 452 9650</p>
+                <p>Correo: mario.villamizar@udea.edu.co</p>
+        </div>
+    </footer>
+</body>
+
+</html>
